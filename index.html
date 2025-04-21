@@ -53,6 +53,13 @@
         href="https://docs.google.com/presentation/d/1TQ5CYKosT6dn6D2nySOHmOno0FpldIBabOoR8wUYkxc/edit?usp=sharing"
         >https://docs.google.com/presentation/d/1TQ5CYKosT6dn6D2nySOHmOno0FpldIBabOoR8wUYkxc/edit?usp=sharing</a
       >
+      <br />
+      Link to Videos:
+      <a
+        href="https://drive.google.com/file/d/1ojGxxRFlo2bf39vN3Ag17khr031n815t/view"
+      >
+        https://drive.google.com/file/d/1ojGxxRFlo2bf39vN3Ag17khr031n815t/view
+      </a>
 
       <h2>Project Overview</h2>
       The VR Deformation project aims to develop a real-time, interactive mesh
@@ -64,10 +71,7 @@
       <h2>Approach</h2>
       Custom Shader-Based Deformation: Leverages GPU-powered shaders to compute
       and render mesh deformations at high performance without modifying the
-      underlying mesh data on the CPU. Vertex Modification Deformation: Involves
-      direct manipulation of vertex positions on the CPU or GPU compute shaders,
-      allowing for fine-grained control over deformation behavior but requiring
-      efficient data transfer strategies.
+      underlying mesh data on the CPU.
 
       <h2>Progress To Date</h2>
       We have successfully completed the initial setup of our development
@@ -86,6 +90,23 @@
           referencing existing open-source implementations.
         </li>
       </ul>
+
+      <div style="display: flex; flex-direction: column; align-items: center">
+        <table
+          style="width: 100%; text-align: center; border-collapse: collapse"
+        >
+          <tr>
+            <td style="text-align: center">
+              <img src="images/unity1.jpg" width="400px" />
+              <figcaption>Interactive Demo setup in Unity</figcaption>
+            </td>
+            <td style="text-align: center">
+              <img src="images/unity2.jpg" width="400px" />
+              <figcaption>Interactive Object Mesh</figcaption>
+            </td>
+          </tr>
+        </table>
+      </div>
 
       <h2>Preliminary Results</h2>
       Our preliminary experiments indicate:
@@ -108,19 +129,15 @@
       decided to:
       <ol>
         <li>
-          Focus efforts on refining and optimizing the shader-based deformation
-          first, aiming to deliver a fully functional demo within the next
-          milestone.
+          Focus efforts on refining and optimizing the shader-based deformation,
+          aiming to deliver a fully functional demo within the next milestone.
         </li>
         <li>
-          Once the shader implementation is validated, reassess and prototype
-          the vertex modification technique to compare performance and visual
-          fidelity.
+          Enhance the the interaction quality between the hands and the objects
+          to achieve a more realistic deformation based on the given hand
+          gesture.
         </li>
       </ol>
-
-      This strategy ensures rapid verification of at least one robust solution
-      before investing resources into the complementary approach.
 
       <h2>Next Steps</h2>
       <ul>
@@ -128,9 +145,7 @@
           Complete advanced shader features (e.g., adaptive tessellation,
           improved lighting).
         </li>
-        <li>
-          Conduct performance benchmarks across different mesh complexities.
-        </li>
+
         <li>
           Integrate intuitive user interactions via hand tracking for real-time
           deformation control.
