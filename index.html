@@ -1,0 +1,141 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .container {
+        margin: 0 auto;
+        padding: 60px 20%;
+      }
+
+      figure {
+        text-align: center;
+      }
+
+      img {
+        display: inline-block;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>VR Deformation Project Update</h1>
+      <div style="text-align: center">
+        Names: Yun Chung Chang, Jason Du, Panfeng(gavin) Jiang, Zitong (Peter)
+        Hu
+      </div>
+
+      <br />
+
+      Link to webpage:
+      <a href="https://zx40224617.github.io/CS184FinalProposal/"
+        >https://zx40224617.github.io/CS184FinalProposal/</a
+      >
+      <br />
+      Link to GitHub repository:
+      <a href="https://github.com/zx40224617/CS184ProjectMilestone"
+        >https://github.com/zx40224617/CS184ProjectMilestone</a
+      >
+      <br />
+      Link to Slides:
+      <a
+        href="https://docs.google.com/presentation/d/1TQ5CYKosT6dn6D2nySOHmOno0FpldIBabOoR8wUYkxc/edit?usp=sharing"
+        >https://docs.google.com/presentation/d/1TQ5CYKosT6dn6D2nySOHmOno0FpldIBabOoR8wUYkxc/edit?usp=sharing</a
+      >
+
+      <h2>Project Overview</h2>
+      The VR Deformation project aims to develop a real-time, interactive mesh
+      deformation system for virtual reality environments. By enhancing
+      immersion through dynamic, responsive mesh modifications, we seek to
+      explore novel ways users can interact with and manipulate virtual objects
+      directly via hand tracking or controller inputs.
+
+      <h2>Approach</h2>
+      Custom Shader-Based Deformation: Leverages GPU-powered shaders to compute
+      and render mesh deformations at high performance without modifying the
+      underlying mesh data on the CPU. Vertex Modification Deformation: Involves
+      direct manipulation of vertex positions on the CPU or GPU compute shaders,
+      allowing for fine-grained control over deformation behavior but requiring
+      efficient data transfer strategies.
+
+      <h2>Progress To Date</h2>
+      We have successfully completed the initial setup of our development
+      environment:
+      <ul>
+        <li>
+          Installed and configured Unity with the necessary XR plugins
+          (OpenXR/OVR).
+        </li>
+        <li>
+          Established a stable connection to our target VR device (e.g., Meta
+          Quest), including reliable hand-tracking data retrieval.
+        </li>
+        <li>
+          Started prototyping the deformation logic within custom Unity shaders,
+          referencing existing open-source implementations.
+        </li>
+      </ul>
+
+      <h2>Preliminary Results</h2>
+      Our preliminary experiments indicate:
+      <ul>
+        <li>
+          The shader-based approach can achieve visually convincing deformations
+          in real time. Prior art demonstrates feasibility, and we plan to
+          enhance realism through improved normal mapping and shading
+          techniques.
+        </li>
+        <li>
+          To date, no known Unity solutions implement our vertex modification
+          scheme without third-party plugins, highlighting the novelty of our
+          second approach.
+        </li>
+      </ul>
+
+      <h2>Updated Work Plan</h2>
+      Following insightful discussions with our TA and Prof. Ren Ng, we have
+      decided to:
+      <ol>
+        <li>
+          Focus efforts on refining and optimizing the shader-based deformation
+          first, aiming to deliver a fully functional demo within the next
+          milestone.
+        </li>
+        <li>
+          Once the shader implementation is validated, reassess and prototype
+          the vertex modification technique to compare performance and visual
+          fidelity.
+        </li>
+      </ol>
+
+      This strategy ensures rapid verification of at least one robust solution
+      before investing resources into the complementary approach.
+
+      <h2>Next Steps</h2>
+      <ul>
+        <li>
+          Complete advanced shader features (e.g., adaptive tessellation,
+          improved lighting).
+        </li>
+        <li>
+          Conduct performance benchmarks across different mesh complexities.
+        </li>
+        <li>
+          Integrate intuitive user interactions via hand tracking for real-time
+          deformation control.
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
